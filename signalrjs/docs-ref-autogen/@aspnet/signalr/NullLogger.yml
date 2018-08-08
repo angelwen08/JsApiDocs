@@ -18,12 +18,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: 'The singleton instance of the <xref:%40aspnet%2Fsignalr.NullLogger>.'
+    summary: 'The singleton instance of the <xref:NullLogger>.'
     syntax:
-      content: 'public static instance: ILogger = new NullLogger()'
+      content: 'static instance: ILogger'
       return:
         type:
           - '@aspnet/signalr.ILogger'
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.NullLogger.log'
     name: log
     children: []
@@ -42,6 +43,7 @@ items:
           type:
             - string
           description: ''
+    package: '@aspnet/signalr'
 references:
   - uid: '@aspnet/signalr.ILogger'
     spec.typeScript:

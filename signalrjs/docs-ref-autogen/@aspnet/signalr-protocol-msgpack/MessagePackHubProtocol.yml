@@ -25,10 +25,11 @@ items:
       The name of the protocol. This is used by SignalR to resolve the protocol
       between the client and server.
     syntax:
-      content: 'public name: string = "messagepack"'
+      content: 'name: string'
       return:
         type:
           - string
+    package: '@aspnet/signalr-protocol-msgpack'
   - uid: '@aspnet/signalr-protocol-msgpack.MessagePackHubProtocol.parseMessages'
     name: parseMessages
     children: []
@@ -54,6 +55,7 @@ items:
       return:
         type:
           - 'HubMessage[]'
+    package: '@aspnet/signalr-protocol-msgpack'
   - uid: '@aspnet/signalr-protocol-msgpack.MessagePackHubProtocol.transferFormat'
     name: transferFormat
     fullName: transferFormat
@@ -63,10 +65,11 @@ items:
     type: property
     summary: The TransferFormat of the protocol.
     syntax:
-      content: 'public transferFormat: TransferFormat = TransferFormat.Binary'
+      content: 'transferFormat: TransferFormat'
       return:
         type:
           - TransferFormat
+    package: '@aspnet/signalr-protocol-msgpack'
   - uid: '@aspnet/signalr-protocol-msgpack.MessagePackHubProtocol.version'
     name: version
     fullName: version
@@ -76,10 +79,11 @@ items:
     type: property
     summary: The version of the protocol.
     syntax:
-      content: 'public version: number = 1'
+      content: 'version: number'
       return:
         type:
           - number
+    package: '@aspnet/signalr-protocol-msgpack'
   - uid: '@aspnet/signalr-protocol-msgpack.MessagePackHubProtocol.writeMessage'
     name: writeMessage
     children: []
@@ -97,3 +101,4 @@ items:
       return:
         type:
           - ArrayBuffer
+    package: '@aspnet/signalr-protocol-msgpack'

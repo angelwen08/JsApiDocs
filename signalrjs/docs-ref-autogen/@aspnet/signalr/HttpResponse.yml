@@ -23,13 +23,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: The content of the response.
-    optional: true
+    summary: ''
     syntax:
-      content: 'public content?: string | ArrayBuffer'
+      content: 'content: string | ArrayBuffer'
       return:
         type:
           - string | ArrayBuffer
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.constructor'
     name: HttpResponse
     children: []
@@ -37,8 +37,8 @@ items:
     langs:
       - typeScript
     summary: >-
-      Constructs a new instance of <xref:%40aspnet%2Fsignalr.HttpResponse> with
-      the specified status code.
+      Constructs a new instance of <xref:HttpResponse> with the specified status
+      code.
     syntax:
       content: 'new HttpResponse(statusCode: number)'
       parameters:
@@ -47,6 +47,7 @@ items:
             - number
           description: |
             The status code of the response.
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.constructor_1'
     name: HttpResponse
     children: []
@@ -54,8 +55,8 @@ items:
     langs:
       - typeScript
     summary: >-
-      Constructs a new instance of <xref:%40aspnet%2Fsignalr.HttpResponse> with
-      the specified status code and message.
+      Constructs a new instance of <xref:HttpResponse> with the specified status
+      code and message.
     syntax:
       content: 'new HttpResponse(statusCode: number, statusText: string)'
       parameters:
@@ -69,6 +70,7 @@ items:
             - string
           description: |
             The status message of the response.
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.constructor_2'
     name: HttpResponse
     children: []
@@ -76,8 +78,8 @@ items:
     langs:
       - typeScript
     summary: >-
-      Constructs a new instance of <xref:%40aspnet%2Fsignalr.HttpResponse> with
-      the specified status code, message and string content.
+      Constructs a new instance of <xref:HttpResponse> with the specified status
+      code, message and string content.
     syntax:
       content: >-
         new HttpResponse(statusCode: number, statusText: string, content:
@@ -98,6 +100,7 @@ items:
             - string
           description: |
             The content of the response.
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.constructor_3'
     name: HttpResponse
     children: []
@@ -105,8 +108,8 @@ items:
     langs:
       - typeScript
     summary: >-
-      Constructs a new instance of <xref:%40aspnet%2Fsignalr.HttpResponse> with
-      the specified status code, message and binary content.
+      Constructs a new instance of <xref:HttpResponse> with the specified status
+      code, message and binary content.
     syntax:
       content: >-
         new HttpResponse(statusCode: number, statusText: string, content:
@@ -127,6 +130,7 @@ items:
             - ArrayBuffer
           description: |
             The content of the response.
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.statusCode'
     name: statusCode
     fullName: statusCode
@@ -134,12 +138,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: The status code of the response.
+    summary: ''
     syntax:
-      content: 'public statusCode: number'
+      content: 'statusCode: number'
       return:
         type:
           - number
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HttpResponse.statusText'
     name: statusText
     fullName: statusText
@@ -147,10 +152,10 @@ items:
     langs:
       - typeScript
     type: property
-    summary: The status message of the response.
-    optional: true
+    summary: ''
     syntax:
-      content: 'public statusText?: string'
+      content: 'statusText: string'
       return:
         type:
           - string
+    package: '@aspnet/signalr'

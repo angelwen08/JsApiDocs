@@ -23,9 +23,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is an Invocation message and implements the
-      <xref:%40aspnet%2Fsignalr.InvocationMessage> interface.
+      <xref:InvocationMessage> interface.
     type: field
     numericValue: 1
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.StreamItem'
     name: StreamItem
     children: []
@@ -33,9 +34,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a StreamItem message and implements the
-      <xref:%40aspnet%2Fsignalr.StreamItemMessage> interface.
+      <xref:StreamItemMessage> interface.
     type: field
     numericValue: 2
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.Completion'
     name: Completion
     children: []
@@ -43,9 +45,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a Completion message and implements the
-      <xref:%40aspnet%2Fsignalr.CompletionMessage> interface.
+      <xref:CompletionMessage> interface.
     type: field
     numericValue: 3
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.StreamInvocation'
     name: StreamInvocation
     children: []
@@ -53,9 +56,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a Stream Invocation message and implements the
-      <xref:%40aspnet%2Fsignalr.StreamInvocationMessage> interface.
+      <xref:StreamInvocationMessage> interface.
     type: field
     numericValue: 4
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.CancelInvocation'
     name: CancelInvocation
     children: []
@@ -63,9 +67,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a Cancel Invocation message and implements the
-      <xref:%40aspnet%2Fsignalr.CancelInvocationMessage> interface.
+      <xref:CancelInvocationMessage> interface.
     type: field
     numericValue: 5
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.Ping'
     name: Ping
     children: []
@@ -73,9 +78,10 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a Ping message and implements the
-      <xref:%40aspnet%2Fsignalr.PingMessage> interface.
+      <xref:PingMessage> interface.
     type: field
     numericValue: 6
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.MessageType.Close'
     name: Close
     children: []
@@ -83,6 +89,7 @@ items:
       - typeScript
     summary: >-
       Indicates the message is a Close message and implements the
-      <xref:%40aspnet%2Fsignalr.CloseMessage> interface.
+      <xref:CloseMessage> interface.
     type: field
     numericValue: 7
+    package: '@aspnet/signalr'

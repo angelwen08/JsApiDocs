@@ -12,8 +12,8 @@ items:
     summary: >
       A hub message indicating that the sender is closing the connection.
 
-      If <xref:%40aspnet%2Fsignalr.CloseMessage.error> is defined, the sender is
-      closing the connection due to an error.
+      If <xref:error> is defined, the sender is closing the connection due to an
+      error.
     extends:
       name: '@aspnet/signalr.HubMessageBase'
     package: '@aspnet/signalr'
@@ -35,6 +35,7 @@ items:
       return:
         type:
           - string
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.CloseMessage.type'
     name: type
     fullName: type
@@ -48,6 +49,7 @@ items:
       return:
         type:
           - '@aspnet/signalr.MessageType.Close'
+    package: '@aspnet/signalr'
 references:
   - uid: '@aspnet/signalr.HubMessageBase'
     spec.typeScript:

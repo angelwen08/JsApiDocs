@@ -23,14 +23,15 @@ items:
       - typeScript
     type: property
     summary: >-
-      A <xref:%40aspnet%2Fsignalr.MessageHeaders> dictionary containing headers
-      attached to the message.
+      A <xref:MessageHeaders> dictionary containing headers attached to the
+      message.
     optional: true
     syntax:
       content: 'headers?: MessageHeaders'
       return:
         type:
           - '@aspnet/signalr.MessageHeaders'
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.HubInvocationMessage.invocationId'
     name: invocationId
     fullName: invocationId
@@ -41,18 +42,18 @@ items:
     summary: >
       The ID of the invocation relating to this message.
 
-      This is expected to be present for
-      <xref:%40aspnet%2Fsignalr.StreamInvocationMessage> and
-      <xref:%40aspnet%2Fsignalr.CompletionMessage>. It may
+      This is expected to be present for <xref:StreamInvocationMessage> and
+      <xref:CompletionMessage>. It may
 
-      be 'undefined' for an <xref:%40aspnet%2Fsignalr.InvocationMessage> if the
-      sender does not expect a response.
+      be 'undefined' for an <xref:InvocationMessage> if the sender does not
+      expect a response.
     optional: true
     syntax:
       content: 'invocationId?: string'
       return:
         type:
           - string
+    package: '@aspnet/signalr'
 references:
   - uid: '@aspnet/signalr.HubMessageBase'
     spec.typeScript:

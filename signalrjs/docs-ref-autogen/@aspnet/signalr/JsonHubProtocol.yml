@@ -25,10 +25,11 @@ items:
       The name of the protocol. This is used by SignalR to resolve the protocol
       between the client and server.
     syntax:
-      content: 'public name: string = JSON_HUB_PROTOCOL_NAME'
+      content: 'name: string'
       return:
         type:
           - string
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.JsonHubProtocol.parseMessages'
     name: parseMessages
     children: []
@@ -36,8 +37,8 @@ items:
     langs:
       - typeScript
     summary: >-
-      Creates an array of <xref:%40aspnet%2Fsignalr.HubMessage> objects from the
-      specified serialized representation.
+      Creates an array of <xref:HubMessage> objects from the specified
+      serialized representation.
     syntax:
       content: 'function parseMessages(input: string, logger: ILogger)'
       parameters:
@@ -54,6 +55,7 @@ items:
       return:
         type:
           - '@aspnet/signalr.HubMessage[]'
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.JsonHubProtocol.transferFormat'
     name: transferFormat
     fullName: transferFormat
@@ -61,12 +63,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: 'The <xref:%40aspnet%2Fsignalr.TransferFormat> of the protocol.'
+    summary: 'The <xref:TransferFormat> of the protocol.'
     syntax:
-      content: 'public transferFormat: TransferFormat = TransferFormat.Text'
+      content: 'transferFormat: TransferFormat'
       return:
         type:
           - '@aspnet/signalr.TransferFormat'
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.JsonHubProtocol.version'
     name: version
     fullName: version
@@ -76,19 +79,18 @@ items:
     type: property
     summary: The version of the protocol.
     syntax:
-      content: 'public version: number = 1'
+      content: 'version: number'
       return:
         type:
           - number
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.JsonHubProtocol.writeMessage'
     name: writeMessage
     children: []
     type: method
     langs:
       - typeScript
-    summary: >-
-      Writes the specified <xref:%40aspnet%2Fsignalr.HubMessage> to a string and
-      returns it.
+    summary: 'Writes the specified <xref:HubMessage> to a string and returns it.'
     syntax:
       content: 'function writeMessage(message: HubMessage)'
       parameters:
@@ -99,6 +101,7 @@ items:
       return:
         type:
           - string
+    package: '@aspnet/signalr'
 references:
   - uid: '@aspnet/signalr.TransferFormat'
     spec.typeScript:

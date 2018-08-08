@@ -23,14 +23,15 @@ items:
       - typeScript
     type: property
     summary: >-
-      A boolean that will be set by the <xref:%40aspnet%2Fsignalr.IStreamResult>
-      when the stream is closed.
+      A boolean that will be set by the <xref:IStreamResult> when the stream is
+      closed.
     optional: true
     syntax:
       content: 'closed?: boolean'
       return:
         type:
           - boolean
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.IStreamSubscriber.complete'
     name: complete
     children: []
@@ -41,10 +42,11 @@ items:
       Called by the framework when the end of the stream is reached.
 
       After this method is called, no additional methods on the
-      <xref:%40aspnet%2Fsignalr.IStreamSubscriber> will be called.
+      <xref:IStreamSubscriber> will be called.
     syntax:
       content: function complete()
       parameters: []
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.IStreamSubscriber.error'
     name: error
     children: []
@@ -55,7 +57,7 @@ items:
       Called by the framework when an error has occurred.
 
       After this method is called, no additional methods on the
-      <xref:%40aspnet%2Fsignalr.IStreamSubscriber> will be called.
+      <xref:IStreamSubscriber> will be called.
     syntax:
       content: 'function error(err: any)'
       parameters:
@@ -63,6 +65,7 @@ items:
           type:
             - any
           description: ''
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.IStreamSubscriber.next'
     name: next
     children: []
@@ -77,3 +80,4 @@ items:
           type:
             - T
           description: ''
+    package: '@aspnet/signalr'

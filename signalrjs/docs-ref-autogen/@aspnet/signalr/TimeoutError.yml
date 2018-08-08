@@ -26,18 +26,21 @@ items:
       return:
         type:
           - ErrorConstructor
+    package: '@aspnet/signalr'
   - uid: '@aspnet/signalr.TimeoutError.constructor'
     name: TimeoutError
     children: []
     type: constructor
     langs:
       - typeScript
-    summary: 'Constructs a new instance of <xref:%40aspnet%2Fsignalr.TimeoutError>.'
+    summary: 'Constructs a new instance of <xref:TimeoutError>.'
     syntax:
-      content: 'new TimeoutError(errorMessage: string)'
+      content: 'new TimeoutError(errorMessage?: string)'
       parameters:
         - id: errorMessage
           type:
             - string
           description: |
             A descriptive error message.
+          optional: true
+    package: '@aspnet/signalr'
